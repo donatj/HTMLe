@@ -1,7 +1,7 @@
 <?php
 /*
  * HTMLe plugin
- * ————————————————————-
+ * â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”-
  * File:     sampleclass.php
  * Type:     class
  * Name:     sample class
@@ -10,7 +10,7 @@
  * Example: {sampleclass text="hello world..."} {sampleclass:dosomething}
  * Required: text
  * Special: {sampleclass} is required to initiate the class prior to {sampleclass:dosomething} being called.  This is the case with all classes.
- * ————————————————————-
+ * â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”-
  * Note: the above information should be included in all plugins and is used to teach 
  * the user about your plugin.  Use the required field for any required attributes, and
  * the special field for any special tags your plugin accepts.
@@ -35,4 +35,3 @@ class HTMLe_sampleclass {
 	 * will be used instead of the independently named function.
 	 */
 }
-?>

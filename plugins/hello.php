@@ -1,7 +1,7 @@
 <?php
 /*
  * HTMLe plugin
- * ————————————————————-
+ * â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”-
  * File:     hello.php
  * Type:     function
  * Name:     hello
@@ -10,7 +10,7 @@
  * Example: {hello} {hello:subfunction} {hello:inner}this is your text{/hello:inner}
  * Required:
  * Special:
- * ————————————————————-
+ * â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”-
  * Note: the above information should be included in all plugins and is used to teach 
  * the user about your plugin.  Use the required field for any required attributes, and
  * the special field for any special tags your plugin accepts.
@@ -73,5 +73,3 @@ function HTMLe_hello_inner($params,$return='') {
 
 	return 'The text being sent to hello:inner is: '.$params['_inner'];
 }
-
-?>

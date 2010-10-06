@@ -24,6 +24,3 @@ function HTMLe_iframe($params,$return='<iframe') {
 	
 	return $return.'></iframe>';
 }
-
-
-?>

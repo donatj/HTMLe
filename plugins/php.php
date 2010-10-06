@@ -1,7 +1,7 @@
 <?php
 /*
  * HTMLe plugin
- * ————————————————————-
+ * â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”-
  * File:     php.php
  * Type:     function/ child functions
  * Name:     php
@@ -10,7 +10,7 @@
  * Example: Execute Code: {php code="echo 'hello world';"} -OR- {php}echo 'hellow world';{/php} Execute File: {php file="myfile.inc"} $_GET: {php:get key="page"} $_SESSION: {php:session key="page"} Variable: {php:variable key="page"} Constant: {php:constant key="page"} Highlight PHP Code: {php:highlight text="<?php"} OR {php:highlight file="myfile.php"}
  * Required:
  * Special: Child functions: highlight, variable, get, post, request, cookie, session
- * ————————————————————-
+ * â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”-
  * Note: the above information should be included in all plugins and is used to teach 
  * the user about your plugin.  Use the required field for any required attributes, and
  * the special field for any special tags your plugin accepts.
@@ -73,6 +73,3 @@ function HTMLe_php_cookie($params) {
 function HTMLe_php_session($params) {
 	return $_SESSION[$params['key']];
 }
-
-
-?>
