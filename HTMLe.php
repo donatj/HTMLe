@@ -198,21 +198,21 @@ class HTMLe {
 ############################################ FIND PLUGINS
 
 
-function __construct() {
-	foreach ((scandir(dirname(__FILE__).'/plugins/')) as $file) {
-          if(substr($file,-4) == '.php') { $this->tags[] = substr($file,0,-4); }
-	}
+	function __construct() {
+		foreach ((scandir(dirname(__FILE__).'/plugins/')) as $file) {
+	          if(substr($file,-4) == '.php') { $this->tags[] = substr($file,0,-4); }
+		}
 
-	$this->find = array('"','}','((','))');
-	$this->replace = array('','','="','"');
-}
+		$this->find = array('"','}','((','))');
+		$this->replace = array('','','="','"');
+	}
 
 
 ############################################ FIX QUOTES (WordPress and CMS)
 
 
 	function cleanquote($input) {
-		return str_ireplace(array('{'.$tag,'&#8221;','&#8243;','&quot;','&#8216;','&#8217;'),array('','"','"','"','\'','\''),$input);
+		return str_ireplace(array('&#8221;','&#8243;','&quot;','&#8216;','&#8217;'),array('"','"','"','\'','\''),$input);
 	}
 
 	
