@@ -200,7 +200,7 @@ class HTMLe {
 
 	function __construct() {
 		foreach ((scandir(dirname(__FILE__).'/plugins/')) as $file) {
-	          if(substr($file,-4) == '.php') { $this->tags[] = substr($file,0,-4); }
+				 if(substr($file,-4) == '.php') { $this->tags[] = substr($file,0,-4); }
 		}
 
 		$this->find = array('"','}','((','))');
@@ -236,7 +236,7 @@ class HTMLe {
 			}
 			
 			
-			if(preg_match_all('/{'.$tag.'}[^{]+{\/'.$tag.'}[^.]*/i',$HTMLIN,$innermatches)) {
+			if(preg_match_all('/{'.$tag.'}[^{]+{\/'.$tag.'}/i',$HTMLIN,$innermatches)) {
 				for($i=0; $i < count($innermatches[0]); $i++) {
 					unset($params);
 					$inm_tmp = explode('}',$innermatches[0][$i]);
