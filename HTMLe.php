@@ -222,7 +222,7 @@ function __construct() {
 	function parse($HTMLIN) {
 		foreach($this->tags as $tag) {
 
-			if(preg_match_all('/({'.$tag.':[^}]+}(.+){\/'.$tag.':[^}]+)/i',$HTMLIN,$innersubmatches)) {
+			if(preg_match_all('/({'.$tag.':[^}]+}(.+){\/'.$tag.':[^}]+})/i',$HTMLIN,$innersubmatches)) {
 				for($i=0; $i < count($innersubmatches[0]); $i++) {
 					unset($params);
 					$inm_tmp = explode('}',$innersubmatches[0][$i]);
